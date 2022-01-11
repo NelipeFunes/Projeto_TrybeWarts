@@ -25,30 +25,66 @@
     <main>
       <form id="evaluation-form">
         <div>
-          <input type="text" placeholder="Nome" id="input-name">
-          <input type="text" placeholder="Sobrenome" id="input-lastname">
+          <input type="text" placeholder="Nome" id="input-name" />
+          <input type="text" placeholder="Sobrenome" id="input-lastname" />
         </div>
         <div>
-          <input type="email" placeholder="Email" id="input-email">
+          <input type="email" placeholder="Email" id="input-email" />
           <select name="house" id="house">
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
           </select>
         </div>
-        <label for="family" id = "label-family">Qual sua família?</label>
-        <div>
-          <input type="radio" name="family" value="Frontend">Frontend
-        </div>
-        <div>
-          <input type="radio" name="family" value="Backend">Backend
-        </div>
-        <div>
-          <input type="radio" name="family" value="FullStack">FullStack
-        </div>
+
+        <label id="label-family">Qual sua família?</label>
+        <label>
+          <input type="radio" name="family" value="Frontend" />
+          Frontend
+        </label>
+        <label>
+          <input type="radio" name="family" value="Backend" />
+          Backend
+        </label>
+        <label>
+          <input type="radio" name="family" value="FullStack" />
+          Fullstack
+        </label>
+
+        <label id="label-content"
+          >Qual conteúdo você está com mais vontade de aprender?</label
+        >
+        <label>
+          <input type="checkbox" name="want-to-learn" value="HoFs" />
+          HoFs
+        </label>
+        <label>
+          <input type="checkbox" name="want-to-learn" value="Jest" />
+          Jest
+        </label>
+        <label>
+          <input type="checkbox" name="want-to-learn" value="Promises" />
+          Promises
+        </label>
+        <label>
+          <input type="checkbox" name="want-to-learn" value="React" />
+          React
+        </label>
+        <label>
+          <input type="checkbox" name="want-to-learn" value="SQL" />
+          SQL
+        </label>
+        <label>
+          <input type="checkbox" name="want-to-learn" value="Python" />
+          Python
+        </label>
       </form>
-      <img src="images/trybewarts-colored.svg" alt="trybewarts-forms-logo" id="trybewarts-forms-logo">
+      <img
+        src="images/trybewarts-colored.svg"
+        alt="trybewarts-forms-logo"
+        id="trybewarts-forms-logo"
+      />
     </main>
     <script src="script.js"></script>
   </body>
