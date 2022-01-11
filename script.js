@@ -31,3 +31,14 @@ function handleSubmitButton() {
 
 const agreementCheckbox = document.getElementById("agreement");
 agreementCheckbox.addEventListener("change", handleSubmitButton);
+
+function updateNumber() {
+  let valor;
+  valor = textArea.value.length;
+  console.log(valor);
+  const counter = document.getElementById('counter');
+  counter.innerHTML = 500-valor;
+}
+
+const textArea = document.getElementById('textarea');
+textArea.addEventListener('keyup', updateNumber);
