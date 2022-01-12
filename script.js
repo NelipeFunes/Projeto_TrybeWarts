@@ -33,7 +33,7 @@ const agreementCheckbox = document.getElementById('agreement');
 agreementCheckbox.addEventListener('change', handleAgreementCheckbox);
 
 const textArea = document.getElementById('textarea');
-
+// Feito com a ajuda do meu amigo Marcos Vinicius
 function updateNumber() {
   const valor = textArea.value.length;
   console.log(valor);
