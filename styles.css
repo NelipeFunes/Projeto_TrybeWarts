@@ -23,21 +23,21 @@ main {
 }
 
 #trybewarts-forms-logo {
-    height: 500px;
+  height: 500px;
 }
 
 #counter {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
-  margin-bottom:5px;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 5px;
 }
 
 #text {
-position: relative;
+  position: relative;
 }
 
 #textarea {
- resize: none;
- width: 100%;
+  resize: none;
+  width: 100%;
 }
