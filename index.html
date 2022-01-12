@@ -25,11 +25,21 @@
     <main>
       <form id="evaluation-form">
         <div>
-          <input type="text" placeholder="Nome" id="input-name" />
-          <input type="text" placeholder="Sobrenome" id="input-lastname" />
+          <input name="name" type="text" placeholder="Nome" id="input-name" />
+          <input
+            name="surname"
+            type="text"
+            placeholder="Sobrenome"
+            id="input-lastname"
+          />
         </div>
         <div>
-          <input type="email" placeholder="Email" id="input-email" />
+          <input
+            name="email"
+            type="email"
+            placeholder="Email"
+            id="input-email"
+          />
           <select name="house" id="house">
             <option value="Gitnória" id="gitnoria-house">Gitnória</option>
             <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -55,30 +65,64 @@
         <label id="label-content"
           >Qual conteúdo você está com mais vontade de aprender?</label
         >
-        <label>
-          <input type="checkbox" name="want-to-learn" value="HoFs" />
-          HoFs
-        </label>
-        <label>
-          <input type="checkbox" name="want-to-learn" value="Jest" />
-          Jest
-        </label>
-        <label>
-          <input type="checkbox" name="want-to-learn" value="Promises" />
-          Promises
-        </label>
-        <label>
-          <input type="checkbox" name="want-to-learn" value="React" />
-          React
-        </label>
-        <label>
-          <input type="checkbox" name="want-to-learn" value="SQL" />
-          SQL
-        </label>
-        <label>
-          <input type="checkbox" name="want-to-learn" value="Python" />
-          Python
-        </label>
+        <div>
+          <label>
+            <input
+              class="subject"
+              type="checkbox"
+              name="want-to-learn"
+              value="HoFs"
+            />
+            HoFs
+          </label>
+          <label>
+            <input
+              class="subject"
+              type="checkbox"
+              name="want-to-learn"
+              value="Jest"
+            />
+            Jest
+          </label>
+          <label>
+            <input
+              class="subject"
+              type="checkbox"
+              name="want-to-learn"
+              value="Promises"
+            />
+            Promises
+          </label>
+        </div>
+        <div>
+          <label>
+            <input
+              class="subject"
+              type="checkbox"
+              name="want-to-learn"
+              value="React"
+            />
+            React
+          </label>
+          <label>
+            <input
+              class="subject"
+              type="checkbox"
+              name="want-to-learn"
+              value="SQL"
+            />
+            SQL
+          </label>
+          <label>
+            <input
+              class="subject"
+              type="checkbox"
+              name="want-to-learn"
+              value="Python"
+            />
+            Python
+          </label>
+        </div>
 
         <div>
           <label id="label-rate">Como você avalia a Trybewarts?</label>
@@ -95,10 +139,10 @@
         </div>
 
         <label for="textarea" class="textarea">Deixe seu comentário:</label>
-        
+
         <div id="text">
           <p id="counter">500</p>
-          <textarea id="textarea" maxlength="500"></textarea>
+          <textarea id="textarea" maxlength="500" name="obs"></textarea>
         </div>
 
         <label id="label-infos">
